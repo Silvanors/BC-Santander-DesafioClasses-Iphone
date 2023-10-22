@@ -1,9 +1,7 @@
-'''mermaid
+```mermaid
 classDiagram
     class iPhone {
-        - modelo: String
-        - cor: String
-        - número de série: String
+        - Usuario: String
         + fazerChamada(numero: String): void
         + enviarMensagem(destinatario: String, mensagem: String): void
         + reproduzirMusica(musica: String): void
@@ -27,4 +25,4 @@ classDiagram
     iPhone *-- AparelhoTelefonico
     iPhone *-- NavegadorInternet
 
-'''
+```
