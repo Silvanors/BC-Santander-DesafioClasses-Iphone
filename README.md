@@ -1,7 +1,6 @@
 ```mermaid
 classDiagram
     class iPhone {
-        - modelo: String
         - Usuario: String
         + fazerChamada(numero: String): void
         + enviarMensagem(destinatario: String, mensagem: String): void
