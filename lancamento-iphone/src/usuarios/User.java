@@ -1,4 +1,4 @@
-package funcionalidades.usuarios;
+package usuarios;
 
 import funcionalidades.iphone.Iphone;
 import funcionalidades.ligacoes.Telefone;
