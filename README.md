@@ -40,3 +40,4 @@ classDiagram
     iPhone *-- NavegadorInternet
 
 ```
+**reproduzido by** [Silvano Rodrigues 🖖](https://github.com/Silvanors)
