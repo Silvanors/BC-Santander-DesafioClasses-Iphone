@@ -8,36 +8,45 @@ Baseado no vídeo de lançamento do iPhone foi elabora em uma ferramenta de UML 
 ### Comportamentos implementados:
 
     Repodutor Musicial: tocar, pausar, selecionarMusica
-    Aparelho Telefônico: ligar, atender, iniciarCorrerioVoz
+    Aparelho Telefônico: ligar, atender, iniciarCorreioVoz
     Navegador na Internet: exibirPagina, adicionarNovaAba, atualizarPagina
 
 
 ```mermaid
 classDiagram
     class iPhone {
-        - Usuario: String
-        + fazerChamada(numero: String): void
-        + enviarMensagem(destinatario: String, mensagem: String): void
-        + reproduzirMusica(musica: String): void
-        + acessarInternet(url: String): void
     }
 
     class ReprodutorMusical {
-        + reproduzirMusica(musica: String): void
+        + tocarMusica(): void
+        + pausarMusica(): void
+        + selecionarMusica(): void
     }
 
     class AparelhoTelefonico {
-        + fazerChamada(numero: String): void
-        + enviarMensagem(destinatario: String, mensagem: String): void
+        + fazerChamada(): void
+        + atenderChamada(): void
+        + iniciarCorreioVoz(): void
+
     }
 
     class NavegadorInternet {
-        + acessarInternet(url: String): void
+        + exibirPagina(): void
+        + adicionarNovaAba(): void
+        + atualizarPagina(): void
+    }
+    class User {
+         - Usuario: String
+         - SmartPhone: iPhone
     }
 
     iPhone *-- ReprodutorMusical
     iPhone *-- AparelhoTelefonico
     iPhone *-- NavegadorInternet
-
+    User   *-- iPhone
 ```
+
+![image](https://github.com/Silvanors/BC-Santander-DesafioClasses-Iphone/assets/107227311/4d3259a6-c1e5-41f7-8248-8b15750c577a)
+
+
 **reproduzido by** [Silvano Rodrigues 🖖](https://github.com/Silvanors)
